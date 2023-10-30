@@ -12,3 +12,7 @@ git clone https://github.com/istrybuk/Automation_Testing.git
 ```
   pip install -r requirements.txt
 ```
+3. Сгенерировать отчет pytest
+```
+  pytest --html=report.html --self-contained-html
+```
