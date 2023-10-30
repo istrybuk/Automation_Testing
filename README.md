@@ -4,11 +4,11 @@
 
 **Запуск проекта:**
 
-1. Установить зависимости
-```
-  pip install -r requirements.txt
-```
-2. Клонировать проект
+1. Клонировать проект
 ```
 git clone https://github.com/istrybuk/Automation_Testing.git
+```
+2. Установить зависимости
+```
+  pip install -r requirements.txt
 ```
