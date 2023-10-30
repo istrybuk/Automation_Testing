@@ -16,4 +16,4 @@ git clone https://github.com/istrybuk/Automation_Testing.git
 ```
   pytest --html=report.html --self-contained-html
 ```
-![Изображение](https://drive.google.com/file/d/1qGcCZdqQdaX3FOJudSr55wPPjRkfsXFq/view?usp=drive_link)
+![Изображение](https://drive.google.com/file/d/1qGcCZdqQdaX3FOJudSr55wPPjRkfsXFq/view?usp=sharing)
