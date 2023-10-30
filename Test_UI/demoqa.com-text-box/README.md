@@ -1,1 +1,3 @@
-# Automation_Testing
+# Demoqa.com/text-box
+
+Тестовое задание по автоматизации тестирования UI.
