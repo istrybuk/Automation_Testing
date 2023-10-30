@@ -8,3 +8,4 @@
 ```
   pip install -r requirements.txt
 ```
+2. Клонировать проект (`git clone https://github.com/istrybuk/Automation_Testing.git`)
