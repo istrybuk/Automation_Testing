@@ -1,3 +1,4 @@
+import allure
 from selenium.webdriver import ActionChains
 from Pages.BaseApp import BasePage
 import Config.locators as loc
@@ -7,28 +8,35 @@ import Config.input as data
 class TextBox(BasePage):
 
     """Ввод данных в поля"""
+
+    @allure.step("Enter full name")
     def enter_full_name(self):
         """Folder Full Name"""
         self.driver.find_element(*loc.PageTextBox.LOCATOR_FIELD_FULL_NAME).send_keys(data.full_name)
 
+    @allure.step("Enter Email")
     def enter_email(self):
         """Folder Email"""
         self.driver.find_element(*loc.PageTextBox.LOCATOR_FIELD_EMAIL).send_keys(data.email)
 
+    @allure.step("Enter Current Address")
     def enter_cur_address(self):
         """Folder Current Address"""
         self.driver.find_element(*loc.PageTextBox.LOCATOR_FIELD_CURRENT_ADDRESS).send_keys(data.cur_address)
 
+    @allure.step("Enter Permanent Address")
     def enter_per_address(self):
         """Folder Permanent Address"""
         self.driver.find_element(*loc.PageTextBox.LOCATOR_FIELD_PERMANENT_ADDRESS).send_keys(data.per_address)
 
+    @allure.step("Click Submit")
     def click_submit_btn(self):
         action = ActionChains(self.driver)
         button_submit = self.driver.find_element(*loc.PageTextBox.LOCATOR_BTN_SUBMIT)
         action.move_to_element(button_submit).click(button_submit).perform()
         # self.driver.find_element('id', 'submit').click()
 
+    @allure.step("Field entry checks")
     def checks_enter_data(self):
 
         """Checking that the form is filled out correctly"""

@@ -1,8 +1,11 @@
 import pytest
+import allure
 from Config.locators import *
 from Pages.TextBoxPage import TextBox
 
 
+@allure.title("Checking field completion")
+@allure.severity("Critical")
 @pytest.mark.parametrize("test", [f"test-{i}" for i in range(1, 2)])
 def test_form_completion_check(browser, test):
     browser = browser
