@@ -7,8 +7,6 @@ def split_in_string(strings, symbol=' '):
     one_str = strings.split()
     return symbol.join(one_str)
 
-    """Represent text-box page input data."""
-
 
 full_name = fake.name()
 email = fake.email()

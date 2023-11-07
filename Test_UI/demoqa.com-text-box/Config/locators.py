@@ -10,9 +10,3 @@ class PageTextBox:
     LOCATOR_CHECK_FORM_EMAIL = ('id', 'email')
     LOCATOR_CHECK_FORM_CURRENT_ADDRESS = ('id', 'currentAddress')
     LOCATOR_CHECK_FORM_PERMANENT_ADDRESS = ('id', 'permanentAddress')
-
-
-class Links:
-
-    HOST = "https://demoqa.com/"
-    TEXT_BOX_PAGE = f"{HOST}text-box"

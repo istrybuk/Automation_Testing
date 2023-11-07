@@ -1,4 +1,3 @@
-import allure
 from selenium.webdriver.support.ui import WebDriverWait
 
 
@@ -8,7 +7,7 @@ class BasePage:
         self.url = url
         self.wait = WebDriverWait(driver, 10, poll_frequency=1)
 
-    @allure.step("Open page")
     def open(self):
-        """Открытие страницы"""
+        """Open page"""
+
         self.driver.get(self.url)
