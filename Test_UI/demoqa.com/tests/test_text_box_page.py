@@ -1,12 +1,12 @@
 import pytest
-from config.links import Links
+from config.links.link_text_box import LinkTextBoxPage
 from pages.text_box_page import TextBox
 
 
 @pytest.mark.smoke
 def test_form_completion_check(browser):
     browser = browser
-    link = Links.TEXT_BOX_PAGE
+    link = LinkTextBoxPage.TEXT_BOX_PAGE
     page_text_box = TextBox(browser, link)
     page_text_box.open()
     page_text_box.enter_full_name()
